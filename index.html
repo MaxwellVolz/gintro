@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- favicon stuff -->
+    <!-- <link rel="icon" 
+	type="image/png" 
+	href="brewImages/favicon32x.png"> -->
+</head>
+<!-- NAVBAR
+	================================================== -->
+
+<body ng-app="volzBrewApp" ng-controller="volzBrewController">
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">BasicBoot.com</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Nav header</li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row" id="quicklinks">
+            <div class="col-md-4">
+                <h2>What is Git?</h2>
+                <p>A quick description of Git. Helpful for determining if there is any reason for you to be here in less than 30 seconds. </p>
+                <p><a class="btn btn-default" id="gitIntroBtn" role="button">Git Intro »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Get Started</h2>
+                <p>Begin with setup and installation of the required software. This section has a link to the git download page and what options you might want to select.</p>
+                <p><a class="btn btn-default" id="installGitBtn" role="button">Install Git »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Begin learning the basics and walk through some realistic scenarios.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            </div>
+        </div>
+        <!-- <hr> -->
+
+         <!-- DOWNLOAD GIT section -->
+        <div class="section" id="gitIntro">
+
+            <div class="row sectionHeader" >
+                <h2 style="text-align:center;color:white;">Git Intro</h2>
+                <p class="backToTop"><a class="btn btn-default backToTopBtn" role="button">Back to Top</a></p>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">What is Git? <span class="text-muted">Software Version Control.</span></h2>
+                    <p class="lead">In software development there is often multiple authors working on the same documents. Git is used to track the changes made to <span class="projectRepo" >projects</span> and record a complete history.</p>
+                    <p><a class="btn btn-default" href="https://git-scm.com/download" target="_blank" role="button">Git Download Page »</a></p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/github.png" data-holder-rendered="true">
+                </div>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/socialCoding.png" data-holder-rendered="true">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">But Why? <span class="text-muted">Collaboration!</span></h2>
+                    <p class="lead">Git makes it easy to share your <span class="projectRepo">projects</span> by allowing other users to clone them and make their own version.</p>
+                </div>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">But you're more of a solo ninja. <span class="text-muted">Epic.</span></h2>
+                    <p class="lead">Git excels at backing up your own projects. Once you push <span class="projectRepo">projects</span> to github.com you no longer have to worry about losing your precious scripts again.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/githubNinja.png" data-holder-rendered="true">
+                </div>
+            </div>
+
+
+        </div>
+        <!-- sections section -->
+
+        <!-- INSTALL GIT section -->
+        <div class="section" id="installGit">
+
+            <div class="row sectionHeader" >
+                <h2 style="text-align:center;color:white;">Install Git</h2>
+                <p class="backToTop"><a class="btn btn-default backToTopBtn" role="button">Back to Top</a></p>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Step 1: Download Git. <span class="text-muted">It will change your life.</span></h2>
+                    <p class="lead">Click the link below and select the appropriate download for your OS. Git supports Windows, OS X, Linux, and whatever the hell Solaris is. Save it. Run it. Scroll to the next step.</p>
+                    <p><a class="btn btn-default" href="https://git-scm.com/download" target="_blank" role="button">Git Download Page »</a></p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/downloadGit.png" data-holder-rendered="true" >
+                </div>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <img title="Adjusting your PATH environment" class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/adjustPath.png" data-holder-rendered="true" >
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Step 2: Install Git. <span class="text-muted">So easy.</span></h2>
+                    <p class="lead">On the "Adjusting your PATH environment" page select "Use Git from the Windows Command Prompt"  to enable git commands from both Git Bash and <span title="dur">Windows Command Prompt.</span></p>
+                </div>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Step 3: Finish Installation. <span class="text-muted">Use MinTTY, or don't.</span></h2>
+                    <p class="lead">If you are unsure of what to do you just "Use Windows' default console window".</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/configureEmulator.png" data-holder-rendered="true">
+                </div>
+            </div>
+
+
+        </div>
+        <!-- sections section -->
+
+
+        <footer>
+            <p>© 2015 Company, Inc.</p>
+        </footer>
+    </div>
+    <!-- /.container -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script> -->
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <!-- <script src="styleJS.js"></script> -->
+</body>
+
+</html>

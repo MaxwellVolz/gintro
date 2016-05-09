@@ -1,0 +1,65 @@
+div.sectionHeader {
+    background-image: linear-gradient(to bottom, #3c3c3c 0, #222 100%);
+    background-repeat: repeat-x;
+    padding-right: 0px;
+    padding-bottom: 12px !important;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+div.container > div.row > div {
+    /*margin-left:15px;*/
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+div.section > div {
+    /*margin-left:15px;*/
+    padding: 40px;
+
+}
+
+div.featurette{
+	margin-left:10%;
+	width:80%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+div.featurette > div > h2 {
+    vertical-align: middle;
+    /*padding-bottom:-10px;*/
+}
+
+@media screen and (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 80px;
+    }
+}
+
+div#quicklinks{
+	margin-bottom:120px;
+	margin-top:40px;
+	text-align:center;
+}
+
+p.backToTop{
+	position: relative;
+    float: right;
+
+    bottom: 43px;
+}
+
+span.projectRepo{
+    color:#C35817;
+    margin-left:14px;
+    margin-right:21px;
+}
